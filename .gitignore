@@ -1,0 +1,309 @@
+# ============================================
+# Genotek AI Lead Generation Platform
+# .gitignore
+# ============================================
+
+# ============================================
+# SENSITIVE DATA - NEVER COMMIT
+# ============================================
+
+# API Keys and Configuration
+backend/config.py
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets.json
+
+# ============================================
+# GENERATED DATA FILES
+# ============================================
+
+# Agent Generated Data (contains scraped/validated project data)
+backend/agents/*/initial_data.json
+backend/agents/*/final_data.json
+backend/agents/*/watchlist_data.json
+
+# Keep .gitkeep files to maintain folder structure
+!backend/agents/*/.gitkeep
+
+# Logs and monitoring output
+*.log
+monitor.log
+watchlist.log
+
+# ============================================
+# PYTHON
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# ============================================
+# NODE.JS / FRONTEND
+# ============================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+jspm_packages/
+
+# Production build
+frontend/dist/
+frontend/build/
+frontend/.next/
+frontend/out/
+
+# Testing
+coverage/
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
+
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# DATABASE
+# ============================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL
+*.sql
+*.dump
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Cache directories
+.cache/
+.parcel-cache/
+.sass-cache/
+
+# ============================================
+# REPLIT SPECIFIC (if using Replit)
+# ============================================
+
+frontend/.local/
+frontend/.replit
+.replit
+replit.nix
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+
+# Frontend specific
+frontend/client/public/build/
+frontend/server/dist/
+
+# Test data (optional - uncomment if you don't want to commit test data)
+# frontend/data/genotek-data.json
+
+# Documentation builds
+docs/_build/
+site/
+
+# ============================================
+# KEEP THESE FILES
+# ============================================
+
+# Keep README files
+!README.md
+!*/README.md
+!WATCHLIST_README.md
+!MONITOR_SETUP.md
+!REAL_TIME_UPDATES.md
+
+# Keep example/template files
+!config.example.py
+!.env.example
+
+# Keep .gitkeep files to preserve empty directories
+!.gitkeep
+!**/.gitkeep
+
+# Keep requirements files
+!requirements.txt
+!package.json
+!package-lock.json
+
+# ============================================
+# NOTES
+# ============================================
+
+# This .gitignore is configured for the Genotek AI Lead Generation Platform
+# 
+# Key exclusions:
+# - API keys and sensitive configuration (config.py, .env)
+# - Generated data files (initial_data.json, final_data.json, watchlist_data.json)
+# - Python cache and virtual environments
+# - Node modules and build artifacts
+# - IDE and OS specific files
+#
+# To commit example data or configuration:
+# 1. Create config.example.py with placeholder values
+# 2. Create .env.example with variable names (no actual keys)
+# 3. Add sample data files with different names (e.g., sample_data.json)
